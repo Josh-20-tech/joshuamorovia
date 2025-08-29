@@ -33,7 +33,7 @@ a:hover{
 }
 main{
     background-color: aliceblue;
-    margin: 2rem;
+    margin-top: 2rem;
     overflow: hidden;
 }
 .head{
@@ -115,4 +115,5 @@ strong{
     strong{
         padding: 6px;
     }
+
 }
