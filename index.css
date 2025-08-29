@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.87);
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height:70px ;
+    background-color: gray;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color:rgba(240, 248, 255, 0.486);
+    margin-right: 5rem;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+a:hover{
+    color: rgb(240, 237, 237);
+    transition: all 2s;
+    border-bottom: 3px solid rgb(247, 246, 246);
+}
+main{
+    margin-top: 5rem;
+}
+section{
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.left{
+    width: 350px;
+    height: fit-content;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+button{
+    margin-top: 2rem;
+    width: 200px;
+    font-size: larger;
+    height: 50px;
+    background-color:chartreuse;
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 0 0 12px chartreuse;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 2px;
+}
+button:hover{
+    transform: scaleX(1.2);
+    transition: all 2s;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    animation-name: roll;
+    animation-duration: 10s;
+}
+@keyframes roll {
+    from{
+        transform: scaleX(1.2);
+        opacity: 0;
+    }
+}
+p{
+    line-height: 1.9;
+    color: aliceblue;
+    margin-top: 5px;
+    font-size: larger;
+}
+.right{
+    width: 350px;
+    height: fit-content;
+    animation-name: ope;
+    animation-duration: 5s; 
+    /* animation-timeline: view(); */
+}
+img{
+    width: 300px;
+    border-radius: 150px;
+    border: 3px solid aquamarine;
+    box-shadow: 0 0 12px antiquewhite;
+    
+}
+@keyframes ope {
+    0%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+footer{
+    text-align: center;
+    color:rgba(240, 248, 255, 0.486);
+}
+.link{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.anc:hover{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+@media screen and (max-width: 600px) {
+    a{
+       margin:0;
+       display: block;
+       margin-top: 7px;
+    }
+    
+    header{
+        display: block;
+        justify-content:space-around;
+        height:120px;
+        padding: 3px;
+    }
+}
